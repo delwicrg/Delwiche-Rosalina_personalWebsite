@@ -630,3 +630,19 @@ h2, h3, h4{
   .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
     font-size: 1.5rem;
   }
+
+  .projectCharacterstic{
+    display: inline-flex;
+    margin-right: .5rem;
+    background-color: lightblue;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding: none;
+
+    border-radius: 1rem;
+  }
+
+  .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }

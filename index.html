@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Custom File's Link -->
+    <link rel="stylesheet" href="css/style2.css">
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/responsive-style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -266,21 +269,21 @@
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="pills-six-tab" data-bs-toggle="pill"
                           data-bs-target="#pills-six" type="button" role="tab" aria-controls="pills-six"
-                          aria-selected="true">Computer Graphics</button>
+                          aria-selected="true">Computer Graphics</buxtton>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
                         aria-labelledby="pills-one-tab">
                         <div class="row">
-                          
-                            <div class="col-lg-4 col-sm-6">
+                            <div class="col-lg-4 col-sm-6"  data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                                 <div class="portfolio-img">
                                     <img src="https://images.unsplash.com/photo-1600456899121-68eda5705257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3JheXxlbnwwfHwwfHw%3D&w=1000&q=80" class="img-fluid w-100 img-thumbnail rounded portfolio-img">
                                     <div class="overlay"> </div>
                                 </div>
                                 <h5 class="mb-0 mt-4"> DESIGN</h5>
-                                <p>Animated, portfolio</p>
+                                <p class = "nopadding">Animated, portfolio</p>
+                                <span><p class = "projectCharacterstic">Java</p><p class = "projectCharacterstic">CSS</p><p class = "projectCharacterstic">HTML</p></span>
                             </div>
                             
                             <div class="col-lg-4 col-sm-6">
@@ -585,6 +588,37 @@
         </div>
     </section>
 
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer section exit -->
 
     <!-- Bootstrap 5 JS CDN Links -->
