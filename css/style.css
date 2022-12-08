@@ -604,8 +604,11 @@ h2, h3, h4{
 }
 
 .portfolio-img{
-    height: 300px;
+    height: 250px;
+    width: 100%;
+    object-position: 0% 0%;
     object-fit: cover;
+
 }
 
 .portfolio .portfolio-item {
