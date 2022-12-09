@@ -690,3 +690,22 @@ h2, h3, h4{
 .img-tape--1:after {
     display: none;
 }
+
+
+.contactForm{
+    display: flex;
+    align-items: center;
+    background-color: #fbfbfb;
+
+}
+
+.contactForm form input{
+    width: 100px;
+    height: 20px;
+    color:rgb(60, 59, 66);
+    
+}
+
+body{
+    background-color: #fbfbfb;
+}
