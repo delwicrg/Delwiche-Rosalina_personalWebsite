@@ -34,7 +34,7 @@
 
     /* Text Color */
     --primary-text: #4458dc;
-    --secondary-text: #854fee;
+    --secondary-text: #ac8b38;
     --text-white: #fff;
     --text-black: #000;
     --text-gray: #777;
@@ -83,33 +83,43 @@ section {
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 0.3125rem;
-    box-shadow: 0 0.625rem 1.875rem rgb(118 85 225 / 30%);
+    box-shadow: 0 0.625rem 1.875rem #2551354a;
     border: double 0.125rem transparent;
     padding: 0 2.0625rem;
     transition: all .3s ease-in-out;
     --webkit-transition: all .3s ease-in-out;
+
+    background: rgb(20,47,42);
+    background: linear-gradient(90deg, rgba(20,47,42,1) 0%, rgba(37,81,53,1) 37%);
+
+    
 }
 
 .primary-btn {
     background-image: var(--gradient);
     color: var(--text-white);
+    background: rgb(20,47,42);
+    background: linear-gradient(90deg, rgba(20,47,42,1) 0%, rgba(37,81,53,1) 37%);
 }
 
 .primary-btn:hover {
-    border-color: var(--secondary-color);
+    border-color: #142f2a;
     background: var(--bg-white);
-    color: var(--secondary-text);
+    color: #142f2a;
     box-shadow: none;
+    background-color: white !important;
 }
 
 .secondary-btn {
+    border-color: #142f2a;
     background-image: var(--bg-white);
-    color: var(--secondary-text);
-    border-color: var(--secondary-color);
+    color: #142f2a;
 }
 
 .secondary-btn:hover {
-    background: var(--gradient);
+    border-color: #142f2a;
+    background: rgb(20,47,42);
+    background: linear-gradient(90deg, rgba(20,47,42,1) 0%, rgba(37,81,53,1) 37%);
     color: var(--text-white);
     box-shadow: none;
 
@@ -141,6 +151,7 @@ h3 {
     color: var(--text-black);
     font-family: var(--primary-font);
     text-transform: uppercase;
+    color: #9e6328;
 }
 
 h5 {
@@ -190,7 +201,7 @@ p {
 
 .header_wrapper .nav-item .nav-link.active,
 .header_wrapper .nav-item .nav-link:hover {
-    color: var(--primary-text);
+    color: var(--secondary-text);
 }
 
 .header-scrolled {
@@ -345,7 +356,7 @@ p {
 }
 
 .portfolio_wrapper .portfolio-img:hover .overlay {
-    background: rgba(77, 87, 222, .5);
+    background: #25513558;
 }
 
 .portfolio-img .overlay i {
@@ -580,17 +591,21 @@ p {
 }
 
 .nameIntro{
-    color:#4458dc;
     display: inline-block;
+    color: #D5AD6D; /*if no support for background-clip*/
+background: -webkit-linear-gradient(transparent, transparent),
+-webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 h1{
     display: inline-flex;
-    color: rgb(57, 54, 71);
 }
 
-h2, h3, h4{
-    color: rgb(57, 54, 71);
+h2, h3, h4, h1{
+    color: #142F2
 }
 
 .logo{
@@ -637,12 +652,15 @@ h2, h3, h4{
   .projectCharacterstic{
     display: inline-flex;
     margin-right: .5rem;
-    background-color: lightblue;
+    background-color: #ac8b388d;
+    color: #957628;
     padding-left: .75rem;
     padding-right: .75rem;
     padding: none;
 
     border-radius: 1rem;
+    box-shadow: 3px 5px 4px ;
+
   }
 
   .nopadding {
@@ -706,6 +724,3 @@ h2, h3, h4{
     
 }
 
-body{
-    background-color: #fbfbfb;
-}
