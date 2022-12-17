@@ -36,7 +36,9 @@
     --primary-text: #4458dc;
     --secondary-text: #ac8b38;
     --text-white: #fff;
-    --text-black: #000;
+    --text-black: #301512;
+    --text-black-lt: #30151281;
+
     --text-gray: #777;
     --text-brown: #4f3214;
 
@@ -164,8 +166,8 @@ h5 {
 }
 
 p {
-    color: var(--text-gray);
-    font-size: 0.9375rem;
+    color: #5b3c38;
+    font-size: 1.03rem;
     line-height: 1.625rem;
     font-weight: 400;
 }
@@ -197,7 +199,7 @@ p {
     font-size: 0.9375rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--text-black);
+    color:#301512;
     display: inline-block;
 }
 
@@ -343,7 +345,7 @@ p {
 .portfolio_wrapper .portfolio-img {
     position: relative;
     cursor: pointer;
-}
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
 
 .portfolio_wrapper .portfolio-img .overlay {
     position: absolute;
@@ -358,7 +360,7 @@ p {
 }
 
 .portfolio_wrapper .portfolio-img:hover .overlay {
-    background: #25513558;
+    background: #ac8b3848;
 }
 
 .portfolio-img .overlay i {
@@ -469,7 +471,8 @@ p {
 }
 
 .footer_wrapper .social-icons a:hover {
-    color: var(--primary-color);
+    color: #957628;
+
 }
 
 .footer_wrapper .copyright-text p {
@@ -642,7 +645,6 @@ h2, h3, h4, h1{
     left: 0;
     transition: all 0.2s ease-in-out;
     opacity: 0;
-    background-color: rgba(26, 188, 156, 0.9);
   }
   .portfolio .portfolio-item .portfolio-item-caption:hover {
     opacity: 1;
@@ -661,7 +663,7 @@ h2, h3, h4, h1{
     padding: none;
 
     border-radius: 1rem;
-    box-shadow: 3px 5px 4px ;
+    box-shadow: 1.5px 3px 2px ;
 
   }
 
@@ -732,6 +734,69 @@ h2, h3, h4, h1{
 }
 
 h5{
-    color: rgba(31, 34, 31);
+    color: var(--text-black) !important;
     padding-bottom: 10px;
 }
+h4{
+    color: var(--text-black) !important;
+
+}
+.intro{
+    color: #301512;
+}
+
+h3{
+    color: #20381b;
+}
+
+p{
+    color: rgba(91, 60, 56, 0.842);
+}
+
+form{
+    color: var(--text-black);
+}
+
+form input{
+    color: var(--text-black);
+}
+
+.portfolio-modal-title, .divider-custom-line{
+    color: var(--text-black) !important;
+
+}
+
+a{
+    color: #bd942a;
+    text-decoration: none;
+}
+
+.modal-dialog a:hover{
+   color: #957628;
+   text-decoration: underline;
+}
+
+.fa-star{
+    color: var(--text-black);
+}
+
+input[type=text],  input[type=email],  textarea[type=text]{
+    border: 2px solid #30151257;
+    border-radius: 4px;
+    color: var(--text-black);
+    padding: 10px;
+  }
+
+
+
+  input[type=text]:focus,   input[type=email]:focus, textarea[type=text]:focus {
+    border: 3px solid var(--secondary-text);;
+    color: var(--text-black);
+    background-color: #ac8b380c;
+
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: var(--text-black-lt) !important;
+    opacity: 1;
+  }

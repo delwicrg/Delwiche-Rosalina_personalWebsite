@@ -64,3 +64,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function clearTextfields(){
+    document.getElementById("fullName").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("msg").value = "";
+
+}
